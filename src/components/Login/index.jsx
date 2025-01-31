@@ -1,8 +1,8 @@
 import Wrapper from './style'
 import React, { useEffect, useState } from "react";
-import { requestNotificationPermission } from "../Helper/push";
+import { requestNotificationPermission } from "../../Helper/push";
 import { onMessage } from "firebase/messaging";
-import { messaging } from "../Helper/firebase";
+import { messaging } from "../../Helper/firebase";
 
 
 const Login = () => {
@@ -15,10 +15,8 @@ const Login = () => {
       console.log("Received foreground message:", payload);
       const { title, body } = payload.notification;
 
-      // Update state
       setNotification({ title, body });
 
-      // Check notification permission before displaying
       if (Notification.permission === "granted") {
         new Notification(title, {
           body: body || "Foreground Notification Body",
