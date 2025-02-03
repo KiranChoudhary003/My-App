@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "start_url": ".",
-=======
-  "start_url": "/",
->>>>>>> f7eb202ace4edd484e15e93dd79eb303600529a2
   "short_name": "Mayoor App",
   "name": "Mayoor School",
   "icons": [
