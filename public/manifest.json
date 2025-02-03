@@ -1,12 +1,12 @@
 {
-  "start_url": "https://my-app-s962.vercel.app/",
-  "short_name": "Mayur App",
-  "name": "Mayur School",
+  "start_url": ".",
+  "short_name": "Mayoor App",
+  "name": "Mayoor School",
   "icons": [
     {
       "src": "logo64.png",
       "sizes": "64x64",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
       "src": "logo192.png",

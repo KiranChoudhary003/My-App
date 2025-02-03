@@ -12,7 +12,6 @@ const firebaseConfig = {
   export const app = initializeApp(firebaseConfig);
 export let messaging = typeof window !== "undefined" ? getMessaging(app) : null;
 if (typeof window !== 'undefined'){
-  // because I'm getting error "Navigator not defined"
   messaging = getMessaging(app);
 }
 export const VAPID_KEY = "BEAZUJPW17IZgn5Cp-61Q-xV15_tNCtNSjYWW0V6U_FjF_HwWoOLsISfTmroLiyTxHruOooDOdpe0rA5Pq9oDvI"
