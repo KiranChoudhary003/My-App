@@ -26,7 +26,7 @@ export const requestNotificationPermission = async () => {
 
     console.log("FCM Token:", token);
 
-    const response = await fetch("http://localhost:5000/api/save-token", {
+    const response = await fetch("https://mayoor-backend.vercel.app/api/save-token", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
